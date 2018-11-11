@@ -6,20 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- adding bootstrap functionality -->
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-
   <style>
-  		*{
-  			font-family: "Segoe UI";
-  		}
 	  	.bg-1 { 
-	       background-color: black; /* gray */
-	        color: #ffffff;
+	       background-color: white; /* gray */
+	        color: gray;
 	    }
 	  	.bg-2 { 
 	     	background-color: #474e5d; /* Dark Blue */
@@ -60,15 +55,9 @@
 			text-decoration-style: none;
 		}
 
-		.display-1, .display-highlight{
-			font-size: 6rem;
-    		font-weight: 300;
-    		line-height: 1.2;
-    		font-family: "Segoe UI";
-		}
-
-		.display-highlight{
-			font-size: 25px;
+		.cardText{
+			max-height: 100px;
+			/*background-color: azure;*/
 		}
   </style>
 
@@ -97,7 +86,7 @@
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="index.html">Home</a></li>
-	        <li><a href="showcase.html">Showcase</a></li>
+	        <li><a href="#">Showcase</a></li>
 	        <li><a href="#">Articles</a></li>
 	        <li><a href="#">Snippets</a></li>
 	      </ul>
@@ -111,37 +100,51 @@
 
 
 	<div class="container-fluid bg-1 text-center">
-	  <h1 class="display-1">Who Am I?</h1>
-	  <img src="bird.jpg" alt="Bird" class="img-circle" style="max-width: 250px;">
-	  <h3 class="display-highlight" id="who">Passionate about programming, love reading books and Mint Mojito fan</h3>
+	  <div class="cardRow">
+	  	<!--card1 s-->
+	  	<div class="col-sm-4">
+	  		<div class="card">
+	  			<img src="tic-tac-toe-game.png" class="img-thumbnail">
+	  			<div class="cardText">
+	  				<h2>Tic tae toe</h2>
+	  				<p>Your typical tic tac toe</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<!--card1 e-->
+
+	  	<!--card2 s-->
+	  	<div class="col-sm-4">
+	  		<div class="card">
+	  			<img src="pubg.png" class="img-thumbnail">
+	  			<div class="cardText">
+	  				<h2>Chicken Dinner</h2>
+	  				<p>A script to handle recoil and auto dodge in PUBG</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<!--card2 e-->
+
+	  	<!--card3 s-->
+	  	<div class="col-sm-4">
+	  		<div class="card">
+	  			<img src="solar.jpg" class="img-thumbnail">
+	  			<div class="cardText">
+	  				<h2>Solar system</h2>
+	  				<p>A javascript based solar system</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<!--card3 e-->
+
+
+	  </div>
 	</div>
 
 	<div class="container-fluid bg-2 text-center">
 
 
-		<div class="col-sm-4">
-		  <h3>What Am I?</h3>
-		  <p class="text-left">Not that classic nerd, but read a lot. Most of them are open-source code, trending web technologies and framework, configuration management technique, different algorithm and approach to a problem and obiviously, novel books</p>
-		</div>
-
-		<div class="col-sm-4 text-left">
-			<ul class=list-inline><h2>My toys</h2></ul>
-				<li>C/C++</li>
-				<li>Java</li>
-				<li>Python</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Javascript</li>
-		</div>
-
-		<div class="col-sm-4 text-left">
-			<ul class=list-inline ><h2>My cool playdough</h2></ul>
-				<li><a class="playDough">Tic tae toe</a></li>
-				<li><a class="playDough">Parasitamol</a></li>
-				<li><a class="playDough">Its chocolate time</a></li>
-				<li><a class="playDough">Chicken Dinner</a></li>
-				<li><a class="playDough">Solar System</a></li>
-				<li><a class="playDough">Poco</a></li>
+		
 		</div>
 <!--
 		<div class="col-sm-4 ">
@@ -162,17 +165,17 @@
 	      <p>Mostly on front field of UIU (United International University). P.S- Bring a cup of tea/coffee or Mint mojito 
 	      </p>
 
-	      <img class="img-thumbnail" src="uiu.jpg" alt="Image">
+	      <img src="birds1.jpg" alt="Image">
 	    </div>
 
 	    <div class="col-sm-4">
-	      <p>If you are suit-tie guy,then <b> zun.sayem@gmail.com</b></p>
-	      <img src="icon-gmail.png" alt="Image" style="max-height: 100px;">
+	      <p>If you are suit-tie guy,  then zun.sayem@gmail.com</p>
+	      <img src="birds2.jpg" alt="Image">
 	    </div>
 
 	    <div class="col-sm-4"> 
 	      <p>Need me right now ? Keep calling any 11 digit number. I own a master phone number to receive any call</p>
-	      <img src="just-kidding.png" alt="Image" style="max-height: 100px">
+	      <img src="birds3.jpg" alt="Image">
 	    </div>
 
 	</div>
